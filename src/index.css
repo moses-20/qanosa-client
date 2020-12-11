@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* import statements for stylesheets */
+@import "./stylesheets/reset.css";
+@import "./stylesheets/responsive.css";
+
+/* import statement for fonts */
+
+/* stylings for App component */
+.app {
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* stylings for Qanosa component */
+.qanosa {
+  background: darkgray;
+  height: 100vh;
+}
+
+.info-whbd {
+  height: 5vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  padding-top: -3px;
+}
+
+.info-whbd span {
+  color: green;
+}
+
+.info-whbd3 {
+  display: flex;
+  justify-content: space-between;
 }

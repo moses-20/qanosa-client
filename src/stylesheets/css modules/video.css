@@ -1,0 +1,13 @@
+.video-chat {
+  background: #434a63;
+  height: 100%;
+  width: 100%;
+}
+
+.video-chat > video {
+  width: inherit;
+  height: inherit;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+}

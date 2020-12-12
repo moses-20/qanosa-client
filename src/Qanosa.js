@@ -1,12 +1,15 @@
+import { useContext } from 'react'
+import { VideoContext } from './contexts/VideoContext'
+
 // components
 import Board from './components/Board'
 import Toolbar from './components/Toolbar'
-
-// icons
-// import { IconContext } from 'react-icons'
-// import { AiFillInfoCircle } from 'react-icons/ai'
+import VideoChat from './components/VideoChat'
 
 export default function Qanosa() {
+
+  const { vid } = useContext(VideoContext)
+
   return (
     <div className='qanosa'>
       <div className='info-whbd'>
@@ -14,7 +17,9 @@ export default function Qanosa() {
         <div> <h3> WhiteBoard Qanosa </h3> </div>
         <div> <h4> Active: <span> 15 </span> | Questions: <span> 2 </span> | Info: <span> 🤔 </span> </h4></div>
       </div>
-      <Board />
+      <div className='switch'>
+        {vid ? <VideoChat /> : <Board />}
+      </div>
       <Toolbar />
     </div>
   )

@@ -21,8 +21,8 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-  padding-top: -3px;
+  /* padding: 0 20px; */
+  /* padding-top: -3px; */
 }
 
 .info-whbd span {
@@ -32,4 +32,13 @@
 .info-whbd3 {
   display: flex;
   justify-content: space-between;
+}
+
+.switch {
+  height: 88%;
+}
+
+/* tool stylings */
+.tool {
+  fill: black;
 }

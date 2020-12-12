@@ -1,10 +1,10 @@
 .toolbar {
-  background: black;
+  background: #434a63;
   height: 7%;
 }
 
 .toolbox {
-  max-width: 75%;
+  max-width: 50%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   margin: 0 auto;
@@ -15,11 +15,12 @@
 }
 
 .toolbox > * {
-  color: black;
+  color: #434a63;
   cursor: pointer;
+  /* padding-top: 10px; */
 }
 
-.toolbox > *:hover {
+/* .toolbox > *:hover {
   color: green;
   text-shadow: 2px 2px 2px black;
-}
+} */
